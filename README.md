@@ -14,7 +14,7 @@ Please refer to the "environment.txt".
 ## Low- and High-level Features Extraction
 | Modality | Low-level Features | Extractor | High-level Features | Extractor |
 |:---:|:---|:---:|:---|:---:|
-| **Face** | Facial landmarks<br>Head pose coordinates | OpenFace 2.0 (https://www.cl.cam.ac.uk/~pr10/publications/wacv16a.pdf) | Facial action units<br>Eye gaze directions<br>Valence and arousal<br>Visual appearance | OpenFace 2.0 [[67]](#references)<br>EmoNet [[77]](#references)<br>TimeSformer [[68]](#references) |
+| **Face** | Facial landmarks<br>Head pose coordinates | [OpenFace 2.0](https://www.cl.cam.ac.uk/~pr10/publications/wacv16a.pdf) | Facial action units<br>Eye gaze directions<br>Valence and arousal<br>Visual appearance | OpenFace 2.0 [[67]](#references)<br>EmoNet [[77]](#references)<br>TimeSformer [[68]](#references) |
 | **Body** | Body pose coordinates | Keypoint R-CNN [[69]](#references) | Body openness and orientation<br>Visual appearance | Pose-based geometric modelling<br>TimeSformer [[68]](#references) |
 | **Audio** | 20 MFCCs, F0, RMS | Librosa [[70]](#references) | Acoustic emotion<br>Spectral flux<br>Speech/silence duration<br>Pause duration/frequency<br>Alpha ratio<br>Hammarberg index | HuBERT-Large [[71]](#references)<br>Librosa [[70]](#references)<br>openSMILE [[78]](#references) |
 | **Text** | Semantic embedding | BERT-base [[72]](#references) | Sentiment of the speech | DeBERTa-base [[73]](#references) |
