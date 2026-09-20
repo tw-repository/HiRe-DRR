@@ -204,6 +204,6 @@ A checkpoint is saved whenever either UAR or mAP improves.
 
 ## Contributing
 
-Issues and pull requests are welcome. For questions, please open a GitHub issue or contact:
+For questions, please open a GitHub issue or contact:
 
 **Tang Wang** — [wangtang@cuit.edu.cn](mailto:wangtang@cuit.edu.cn)
