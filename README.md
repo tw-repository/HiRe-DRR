@@ -1,5 +1,17 @@
 # HiRe-DRR
-Hierarchical Multimodal Interaction Reasoning for Dyadic Relationship Recognition
+**Hierarchical Multimodal Interaction Reasoning for Dyadic Relationship Recognition**
+HiRe-DRR is a multimodal framework for recognising social relationships from dyadic interactions. It jointly models low- and high-level cues from facial behaviour, body motion, audio and speech transcripts.
+
+The framework constructs homogeneous and heterogeneous interactions between two participants and dynamically selects informative interactions through the Mixture-of-Interaction Transformer (MoI-Former). Hierarchy-aware conditional supervision is used to preserve the progressive distinctions between relationship categories.
+
+## Highlights
+
+- Joint modelling of face, body, audio and text modalities.
+- Separate representations for low- and high-level behavioural cues.
+- Homogeneous and heterogeneous cross-participant interaction modelling.
+- Relation-aware Top-K interaction routing.
+- Hierarchy-aware conditional loss for relationship recognition.
+- Support for NoXi, UDIVA and Seamless Interaction.
 
 ## Environment
 Install the required dependencies using:
@@ -34,7 +46,7 @@ We use two relationship categories:
 
 ### Seamless Interaction
 
-[Seamless Interaction](https://github.com/facebookresearch/seamless_interaction) is a large-scale audiovisual dataset of face-to-face dyadic interactions introduced by [Agrawal et al.](https://ai.meta.com/research/publications/seamless-interaction-dyadic-audiovisual-motion-modeling-and-large-scale-dataset/).
+[Seamless Interaction](https://github.com/facebookresearch/seamless_interaction) is a large-scale audiovisual dataset of face-to-face dyadic interactions introduced by [Agrawal et al. 2025](https://ai.meta.com/research/publications/seamless-interaction-dyadic-audiovisual-motion-modeling-and-large-scale-dataset/).
 
 We use five relationship categories:
 
