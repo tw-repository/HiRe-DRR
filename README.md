@@ -11,6 +11,14 @@ Please refer to the "environment.txt".
 
 [Seamless Interaction](https://github.com/facebookresearch/seamless_interaction) was released by [[Vasu Agrawal et al. 2025](https://ai.meta.com/research/publications/seamless-interaction-dyadic-audiovisual-motion-modeling-and-large-scale-dataset/)]. 5 relationships used in this study: Stranger, Acquaintance, Friend, Family and Couple.
 
+## Low- and High-level Features Extraction
+| Modality | Low-level Features | Extractor | High-level Features | Extractor |
+|:---:|:---|:---:|:---|:---:|
+| **Face** | Facial landmarks<br>Head pose coordinates | OpenFace 2.0 [[67]](#references) | Facial action units<br>Eye gaze directions<br>Valence and arousal<br>Visual appearance | OpenFace 2.0 [[67]](#references)<br>EmoNet [[77]](#references)<br>TimeSformer [[68]](#references) |
+| **Body** | Body pose coordinates | Keypoint R-CNN [[69]](#references) | Body openness and orientation<br>Visual appearance | Pose-based geometric modelling<br>TimeSformer [[68]](#references) |
+| **Audio** | 20 MFCCs, F0, RMS | Librosa [[70]](#references) | Acoustic emotion<br>Spectral flux<br>Speech/silence duration<br>Pause duration/frequency<br>Alpha ratio<br>Hammarberg index | HuBERT-Large [[71]](#references)<br>Librosa [[70]](#references)<br>openSMILE [[78]](#references) |
+| **Text** | Semantic embedding | BERT-base [[72]](#references) | Sentiment of the speech | DeBERTa-base [[73]](#references) |
+
 ## Usage
     optional arguments:
       --mode         Choose NoXi, UDIVA or SeamInt
